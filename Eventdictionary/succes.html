@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>ABOUT US | EVENT DICTIONARY</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="a.css">
+        <link rel="stylesheet" type="text/css" href="css/loader.css" />
+
+    
+
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+        <style>
+      body {
+        text-align: center;
+        padding: 40px 0;
+        background: #EBF0F5;
+          font-family: 'philosopher', sans-serif !important;
+      }
+        h1 {
+          color: #64b968;
+          font-family: 'philosopher', sans-serif !important;
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #404F5E;
+          font-family: 'philosopher', sans-serif !important;
+          font-size:20px;
+          margin: 0;
+        }
+      i {
+        color: #9ABC66;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .card {
+        background: white;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    </style>
+        
+       
+        
+    </head>
+
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div class="container animate-bottom" style="display:none;" id="myDiv" >
+        <div><a href="Services.html" align="left"> Back to Service</a></div>
+ <div class="card" style="margin: 80px;">
+      
+          <img src="img/success-2-once.gif" style="width: 100px;">
+        
+        <h1>Success</h1> 
+        <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
+      </div> 
+    </div>
+    <script>
+        var myVar;
+
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+     </script>
+    
+</body></html>
