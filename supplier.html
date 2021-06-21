@@ -10,14 +10,14 @@
 
 <form action="/action_page.php">
   <div class="container">
-    <h1>Supplier Registration</h1>
-    <p>Please fill in this form to register as a genuine supplier of "Event Dictionary".</p>
-    <hr>
+    <h1 style="margin-bottom:0; "><span style="color: #ca9f54; font-weight: bold;">Supplier</span> Registration</h1>
+    <p>Please fill in this form to register as a genuine supplier of <span style="color: #ca9f54">Event Dictionary</span>.</p>
+    <hr class="ruler">
         <label for="regno"><b>Full Name</b></label>
     <input type="text" placeholder="Enter Full Name" name="Fname" id="Fname" required><br/>
     <lable for="business"><b>Business Type</b></lable>
 	
-    <br><br>
+    <br>
 
     <input type="radio" id="individual" name="type" value="individual">
     <lable for="company"> Individual</lable>
@@ -54,7 +54,7 @@
     <br/>
 	
 	<!--dropdown list-->
-    <form name="myform">
+    
     <select id = "ddlModels" onChange="EnableDisableTextBox(this)">
       <option value = "0">Select Category</option>
       <option value = "1">Flower Arrangements</option>
@@ -65,7 +65,7 @@
    
 
    <input type="text" placeholder="If you select Other Please specify the Category" id="txtOther" disabled="disabled" />
-   </form>
+   
 
    <br/><br/>
 
