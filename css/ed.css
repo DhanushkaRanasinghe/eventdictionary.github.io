@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: rgba(250, 250, 250, 0.5);
+    background: #ffae3b;
 }
 
 body, html {
@@ -21,6 +21,29 @@ body, html {
   overflow-x: hidden;
 }
 
+/*Scroll bar*/
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #c69c53; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c69c53; 
+}
 
 .page-heading {
     background-repeat: no-repeat;
@@ -48,6 +71,111 @@ body, html {
   font-style: normal;
   font-weight: 200;
 }
+
+/*Customer form*/
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.container>input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.container input:checked ~ .checkmark {
+  background-color: #c59b52;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.latest-gallery ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.latest-gallery ul li {
+  display: inline-block;
+  max-width: 340px;
+  overflow-y: hidden;
+  margin-bottom: 3px;
+  margin-right: 1px;
+}
+
+.latest-gallery ul li:nth-child(4){
+  margin-right: 0px;
+}
+
+.latest-gallery ul li:nth-child(8){
+  margin-right: 0px;
+}
+
+.latest-gallery ul li img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.latest-gallery ul li img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+
+
 
 
 
