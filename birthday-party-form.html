@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title>BOOKING FORM | EVENT DICTIONARY</title>
+        <title>BIRTHDAY PARTY BOOKING FORM | EVENT DICTIONARY</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
          
@@ -22,26 +22,29 @@
     </head>
     <body>
         <div>
-        <h1>Event Booking Form</h1>
+            <h2 style="text-align: center;"><span class="colo">Event</span> Booking Form </h2>
+            <h3  style="text-align: center;">2<sup>nd</sup> Step | <span class="colo">Birthday Party</span> |</h3>
         </div>
         <div class="container">
         <form action="action_page.php">
 
-                <label for="flname">Full Name</label>
-                <input type="text" id="flname" name="fullname" placeholder="Your full name..">
+                <label for="elname">Event Note</label>
+                <textarea id="note" name="note" placeholder="Note.." style="height:100px"></textarea>
             
                 <label for="Hotels">Hotels</label>
                 <select id="country" name="country">
+                    <option value="No">Don't need Hotel</option>
                   <option value="ASHotel">ASA Hotel, Gampaha</option>
-                  <option value="ASHotel">Crowns Hotel, Gampaha</option>
-                  <option value="ASHotel">King's Garden, Kadawatha</option>
-                    <option value="ASHotel">Grand white Palace, Waliweriya</option>
-                    <option value="ASHotel">Green Palace Hotel, Kiribathgoda</option>
-                    <option value="ASHotel">Lover's Hub, Biyagama</option>
+                  <option value="CrHotel">Crowns Hotel, Gampaha</option>
+                  <option value="KHotel">King's Garden, Kadawatha</option>
+                    <option value="GWHotel">Grand white Palace, Waliweriya</option>
+                    <option value="GpHotel">Green Palace Hotel, Kiribathgoda</option>
+                    <option value="LBHotel">Lover's Hub, Biyagama</option>
                 </select>
             
             <label for="Hotels">Hotels (2nd Option)</label>
                 <select id="country" name="country">
+                    <option value="No">Don't need Hotel</option>
                   <option value="ASHotel">ASA Hotel, Gampaha</option>
                   <option value="ASHotel">Crowns Hotel, Gampaha</option>
                   <option value="ASHotel">King's Garden, Kadawatha</option>
@@ -49,11 +52,15 @@
                     <option value="ASHotel">Green Palace Hotel, Kiribathgoda</option>
                     <option value="ASHotel">Lover's Hub, Biyagama</option>
                 </select>
-                  
+                   
+             <label class="container">If you planning to do Outdoor Birthday Party, Please check this box. 
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
                 
-            <h3>Event utilities</h3>
+            <h3>Birthday Party Checklist</h3>
             <div style="padding-left: 2pc;">
-            <label class="container">Wedding Cake
+            <label class="container">Birthday Cake
               <input type="checkbox" checked="checked">
               <span class="checkmark"></span>
             </label>
@@ -66,6 +73,30 @@
               <span class="checkmark"></span>
             </label>
             <label class="container">Music Band
+              <input type="radio" name="Music">
+              <span class="checkmark"></span>
+            </label>
+                <label class="container">DJ Band
+              <input type="radio" name="Music">
+              <span class="checkmark"></span>
+            </label>
+                <label class="container">Flower arrangements
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+                <label class="container">Bartender
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+                <label class="container"> Refreshments
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+                <label class="container"> backdrop
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+                <label class="container"> Invitation Cards
               <input type="checkbox">
               <span class="checkmark"></span>
             </label>
@@ -75,20 +106,13 @@
 
             
                 <label for="crowd">Expected number of guests</label>
-                <input type="text" id="crowd" name="crowd" placeholder="Your The number of guests..">
+                <input type="number" id="crowd" name="crowd" placeholder="Your The number of guests..">
                   
-                <label for="Address">Address</label>
-                <textarea id="subject" name="subject" placeholder="Address.." style="height:50px"></textarea>
-
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                  <option value="australia">Sri Lanka</option>
-                  <option value="canada">Canada</option>
-                  <option value="usa">USA</option>
-                </select>
+                 
+            <p style="text-align: center">Our Team member will contact you soon. </p>
 
                 <div class="simple-btn " style="text-align: center; margin-bottom: 10px;padding-top: 15px;">
-                        <a href="Testimonials.html">Continue</a>
+                        <a href="Testimonials.html">Request Quotation</a>
             </div>
 
               </form>

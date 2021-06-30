@@ -536,7 +536,7 @@ select{
 label{
     font-size: 18px;
 }
-input[type=text],input[type=email], select, textarea {
+input[type=text],input[type=email],input[type=number], select, textarea {
   width: 100%; 
   padding: 12px; 
   border-bottom: 2px solid #c69c53;
