@@ -150,7 +150,7 @@ body, html {
 
 .latest-gallery ul li {
   display: inline-block;
-  max-width: 340px;
+  max-width: 338px;
   overflow-y: hidden;
   margin-bottom: 3px;
   margin-right: 1px;
@@ -1555,7 +1555,7 @@ h1 {
 
 @media (min-width: 992px){
     .service-content{
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -1952,6 +1952,16 @@ q {font-style: italic;}
     src: url(fonts/Allitta Calligraphy.ttf);
 }
 
+@media (min-width: 992px) {
+    .low{
+        float: left;
+    }}
+
+@media (min-width: 992px) {
+    .low2{
+        padding-left: 350px;
+        float: right;
+    }}
 
 @media (max-width: 992px) {
 
